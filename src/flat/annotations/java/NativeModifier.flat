@@ -1,0 +1,10 @@
+package flat/annotations/java
+
+import flat/ast
+
+data class extends AnnotationNode implements Modifier {
+  override static visible lazy String[] aliases => Array<String>():add("native")
+  override static visible lazy String identifier => null
+
+  override visible String aliasUsed
+}

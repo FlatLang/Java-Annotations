@@ -1,0 +1,6 @@
+package flat/annotations/java
+
+trait Modifier {
+  static visible lazy String[] aliases => Array<String>()
+  visible String aliasUsed
+}
