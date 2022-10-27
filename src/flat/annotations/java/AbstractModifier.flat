@@ -5,7 +5,7 @@ import flat/ast
 data class extends AnnotationNode implements Modifier {
   override static visible lazy String[] aliases => Array<String>():add("abstract")
   override static visible lazy String identifier => null
-  override static visible lazy Array<Class<Node>> allowedNodeContexts => [FileNode.class, ClassNode.class]
+  override static visible lazy Array<Class<Node>> allowedBaseParents => [FileNode.class, ClassNode.class]
 
   override visible String aliasUsed
 }
