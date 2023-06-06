@@ -4,9 +4,9 @@ import flat/ast
 import flat/compiler/models
 
 data class extends AnnotationNode implements Modifier {
-  override static visible lazy String[] aliases => Array<String>():add("private")
-  override static visible lazy String identifier => null
-  override static visible lazy Array<Class<Node>> allowedBaseParents => [FileNode.class, ClassNode.class, FunctionNode.class]
+    override static visible lazy String[] aliases => Array<String>():add("private")
+    override static visible lazy String identifier => null
+    override static visible lazy Array<Class<Node>> allowedBaseParents => [FileNode.class, ClassNode.class, FunctionNode.class]
 
-  override visible Token aliasUsed
+    override visible Token aliasUsed
 }

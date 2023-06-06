@@ -4,8 +4,8 @@ import flat/ast
 import flat/compiler/models
 
 data class extends AnnotationNode implements Modifier {
-  override static visible lazy String[] aliases => Array<String>():add("native")
-  override static visible lazy String identifier => null
+    override static visible lazy String[] aliases => Array<String>():add("native")
+    override static visible lazy String identifier => null
 
-  override visible Token aliasUsed
+    override visible Token aliasUsed
 }
